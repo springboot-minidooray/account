@@ -27,7 +27,8 @@ public class AccountServiceImpl implements AccountService{
     @Transactional
     public Account createAccount(AccountRegisterRequest accountRegisterRequest) {
         boolean present = accountRepository.findById(accountRegisterRequest.getId()).isPresent();
-        if(present) throw new IllegalStateException("already exist " +accountRegisterRequest.getId());
+//        if(present) throw new IllegalStateException("already exist " +accountRegisterRequest.getId());
+        if(present) return new Account();
         return accountRepository.save(new Account(
                 accountRegisterRequest.getId(),
                 accountRegisterRequest.getEmail(),

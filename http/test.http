@@ -1,4 +1,4 @@
-POST http://localhost:8080/accounts
+POST http://localhost:9090/accounts
 Content-Type: application/json
 
 {
@@ -9,15 +9,15 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:8080/accounts/123
+GET http://localhost:9090/accounts/123
 Accept: application/json
 
 ###
-GET http://localhost:8080/accounts
+GET http://localhost:9090/accounts
 Accept: application/json
 
 ###
-PUT http://localhost:8080/accounts/1
+PUT http://localhost:9090/accounts/1
 Content-Type: application/json
 
 {
@@ -27,4 +27,4 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:8080/accounts/1
+DELETE http://localhost:9090/accounts/1

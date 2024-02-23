@@ -45,8 +45,7 @@ public class AccountController {
 
     // 탈퇴
     @DeleteMapping("/accounts/{id}")
-    public String deleteAccount(@PathVariable String id){
+    public void deleteAccount(@PathVariable String id){
         accountService.deleteAccount(id);
-        return "{\"result\":\"OK\"}";
     }
 }
