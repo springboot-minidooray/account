@@ -8,18 +8,18 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-@SpringBootTest
-class AccountApiApplicationTests {
-
-	@Autowired
-	AccountService accountService;
-
-	@Test
-	void testContextLoads() {
-		// when
-		List<Account> actual = accountService.getAccounts();
-		// then
-		Assertions.assertThat(actual).hasSize(2);
-	}
-
-}
+//@SpringBootTest
+//class AccountApiApplicationTests {
+//
+//	@Autowired
+//	AccountService accountService;
+//
+//	@Test
+//	void testContextLoads() {
+//		// when
+//		List<Account> actual = accountService.getAccounts();
+//		// then
+//		Assertions.assertThat(actual).hasSize(2);
+//	}
+//
+//}

@@ -1,0 +1,30 @@
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{
+  "id": "123",
+  "email": "abc@asd.as",
+  "password": "비번"
+}
+
+
+###
+GET http://localhost:8080/accounts/123
+Accept: application/json
+
+###
+GET http://localhost:8080/accounts
+Accept: application/json
+
+###
+PUT http://localhost:8080/accounts/1
+Content-Type: application/json
+
+{
+  "password": "dsa",
+  "pass": 111
+}
+
+
+###
+DELETE http://localhost:8080/accounts/1

@@ -17,5 +17,6 @@ public class Account {
     public String id;
     public String email;
     public String password;
+    public String status;
 
 }
